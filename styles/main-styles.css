@@ -4,3 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* variables for colors */
+:root{
+  --highlight-color: #ff7264;
+  --white-color: #fff;
+  --text-color: #7f7f7f;;
+  --dark-bg-color: #2e2e2e;
+  --light-bg-color: #fff;
+  --gray-bg-color: #666;
+}
