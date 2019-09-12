@@ -40,6 +40,36 @@ nav ul li a:hover {
   border-bottom: 1px solid var(--white-color);
 }
 
+/* Hide Hamburger */
+#page-nav label, #hamburger {
+  display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* Show Hamburger */
+  #page-nav label {
+    display: inline-block;
+    color: var(--white-color);
+    background: var(--highlight-color);
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    display: block;
+  }
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+}
+
 /* header section */
 header {
   background-image: url("/images/top_banner_bg.jpg");
@@ -52,7 +82,7 @@ header h1, header p {
 }
 
 header h1 {
-  margin-top: 100px;
+  margin-top: 125px;
 }
 
 #logo {
