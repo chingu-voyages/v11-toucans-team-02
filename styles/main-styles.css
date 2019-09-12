@@ -15,6 +15,18 @@
   --gray-bg-color: #666;
 }
 
+/* navigation section */
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+/* header section */
+
 /* review section */
 #review-section {
 }
