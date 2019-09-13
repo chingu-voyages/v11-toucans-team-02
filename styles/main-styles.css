@@ -73,6 +73,8 @@ nav ul li a:hover {
 /* header section */
 header {
   background-image: url("/images/top_banner_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   color: var(--white-color);
 }
