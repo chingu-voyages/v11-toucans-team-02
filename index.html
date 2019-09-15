@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles/main-styles.css">
-  <title>S&E Design Studios</title>
-</head>
-<body>  
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/main-styles.css" />
+    <script defer src="./scripts/load-reviews.js"></script>
+    <title>S&E Design Studios</title>
+  </head>
+  <body>
+    <header>
       <nav id="page-nav">
         <!-- [THE HAMBURGER] -->
         <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger"/>
-          <ul>
-            <li><a href="#services-section">Services</a></li>
-            <li><a href="#clients-section">Clients</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#review-section">Reviews</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-          </ul>
-      </nav>   
-    <img src="./images/se_logo_nostroke.svg" alt="S&E Design Studios Logo" id="logo"> 
-    <h1>S&E Design Studios</h1>   
-    <p>Designing Your Future.</p>
-  </header>
+        <input type="checkbox" id="hamburger" />
+        <ul>
+          <li><a href="#services-section">Services</a></li>
+          <li><a href="#clients-section">Clients</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#review-section">Reviews</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+      <img
+        src="./images/se_logo_nostroke.svg"
+        alt="S&E Design Studios Logo"
+        id="logo"
+      />
+      <h1>S&E Design Studios</h1>
+      <p>Designing Your Future.</p>
+    </header>
 
-  <section id="review-section">
-
-  </section>
-</body>
+    <section id="review-section">
+      <h2 class="review-tittle">Reviews</h2>
+      <div class="reviews-container"></div>        
+      </div>
+    </section>
+  </body>
 </html>
