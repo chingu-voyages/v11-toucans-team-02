@@ -15,6 +15,10 @@
   --gray-bg-color: #666;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 /* navigation section */
 nav {
   text-align: right;
