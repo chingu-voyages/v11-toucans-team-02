@@ -258,7 +258,7 @@ header h1 {
 }
 
 .cell-3 p {
-  margin-top: 10px;
+  margin: 10px 0px;
   padding: 0 10px;
 }
 
@@ -370,6 +370,10 @@ header h1 {
 
   .cell-1:hover h3, .cell-1:hover p, .cell-4:hover h3, .cell-4:hover p {
     opacity: 1;
+  }
+
+  nav ul li a {
+    color: var(--text-color);
   }
 
 }
