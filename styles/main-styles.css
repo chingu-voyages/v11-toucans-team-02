@@ -41,7 +41,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 1px solid var(--highlight-color);
+  border-bottom: 1px solid var(--white-color);
+  color: var(--white-color);
 }
 
 /* Hide Hamburger */
@@ -177,3 +178,150 @@ header h1 {
 .btn:active {
   transform: scale(0.95);
 }
+
+/* services section */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 5px;
+  margin: 5px;
+}
+
+.cell {
+  background: var(--highlight-color);
+  text-align: center;
+  color: var(--white-color);
+  padding-top: 10px;
+}
+
+.cell h3 {
+  font-size: 20px;
+}
+
+.cell p {
+  line-height: 1.4em;
+}
+
+.cell-1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  padding: 10px;
+}
+
+.cell-1 p, .cell-4 p {
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+.cell-1 h3, .cell-4 h3 {
+  font-size: 30px;
+}
+
+.cell-1:hover {
+  background-image: url("../images/negative-space-black-pencils-and-design-sign.jpg");
+}
+
+.cell-1:hover p, .cell-1:hover h3 {
+  opacity: 0;
+  transition: 1000ms;
+}
+
+.cell-2 {
+  background-image: url("../images/sketch-web-design-layout-wireframe-paper-negative-space.jpg");
+}
+
+.cell-2 h3, .cell-2 p {
+  opacity: 0;
+}
+
+.cell-2:hover {
+  background: var(--highlight-color);
+}
+
+.cell-2:hover h3, .cell-2:hover p {
+  opacity: 1;
+  transition: 1000ms;
+}
+
+.cell-3 {
+  background-image: url("../images/bdbd3a64-14b9-4567-9880-72863e7f7ee3.jpg");
+}
+
+.cell-3 h3, .cell-3 p {
+  opacity: 0;
+}
+
+.cell-3:hover {
+  background: var(--highlight-color);
+}
+
+.cell-3:hover h3, .cell-3:hover p {
+  opacity: 1;
+  transition: 1000ms
+}
+
+.cell-4 {
+  grid-column: 3/5;
+  grid-row: 2/4;
+  padding: 10px;
+}
+
+.cell-4:hover {
+  background-image: url("../images/planning-design-being-creative.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cell-4:hover p, .cell-4:hover h3 {
+  opacity: 0;
+  transition: 1000ms;
+}
+
+.cell-5 {
+  background-image: url("../images/design-plans-color-swatches.jpg");
+}
+
+.cell-5 h3, .cell-5 p {
+  opacity: 0;
+}
+
+.cell-5:hover {
+  background: var(--highlight-color);
+}
+
+.cell-5:hover h3, .cell-5:hover p {
+  opacity: 1;
+  transition: 1000ms;
+}
+
+.cell-6 {
+  background-image: url("../images/aleks-dorohovich-nJdwUHmaY8A-unsplash.jpg");
+}
+
+.cell-6 p, .cell-6 h3 {
+  opacity: 0;
+}
+
+.cell-6:hover {
+  background: var(--highlight-color);
+}
+
+.cell-6:hover p, .cell-6:hover h3 {
+  opacity: 1;
+  transition: 1000ms;
+}
+
+#services-section {
+  text-align: center;
+  margin-top: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.services-title {
+  font-size: 2em;
+  text-shadow: 1px 1px var(--text-color);
+  color: var(--highlight-color);
+}
+
