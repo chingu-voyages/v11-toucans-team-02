@@ -325,3 +325,32 @@ header h1 {
   color: var(--highlight-color);
 }
 
+@media screen and (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .cell-1, .cell-2, .cell-3, .cell-4, .cell-5, .cell-6 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .cell-2, .cell-3, .cell-5, .cell-6 {
+    background: var(--highlight-color);;
+  }
+
+  .cell-2 h3, .cell-2 p, .cell-3 h3, .cell-3 p, .cell-5 h3, .cell-5 p, .cell-6 h3, .cell-6 p {
+    opacity: 1;
+  }
+
+  .cell-1:hover, .cell-4:hover {
+    background: var(--highlight-color);
+  }
+
+  .cell-1:hover h3, .cell-1:hover p, .cell-4:hover h3, .cell-4:hover p {
+    opacity: 1;
+  }
+
+}
+
