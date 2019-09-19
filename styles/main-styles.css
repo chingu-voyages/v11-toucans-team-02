@@ -161,6 +161,43 @@ header h1 {
   overflow: auto;
 }
 
+/* Contact Section */
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  margin: 10px 0;
+}
+
+.contact-message{
+  justify-self: center;
+  padding-left: 5px;
+  font-size: 1.4em;
+  color: var(--text-color);
+}
+
+.contact-info{
+  display: grid;
+  grid-gap: 5px;
+  width: 100vw;
+  padding: 20px 20px 20px 30px;
+  border-radius: 5px;
+  background-color: var(--gray-bg-color);
+  font-size: 1.3em;
+  color: var(--white-color);
+}
+
+.contact-link-container{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: max-content;
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+
 /* services section */
 .services-container {
   display: grid;
@@ -169,6 +206,7 @@ header h1 {
   grid-gap: 5px;
   margin: 5px;
 }
+
 
 .cell {
   background: var(--highlight-color);
@@ -361,6 +399,15 @@ header h1 {
 }
 
 /* common components */
+
+.section-title{
+  align-self: center;
+  justify-self: center;
+  font-size: 2em;
+  text-shadow: 1px 1px var(--text-color);
+  color: var(--highlight-color);
+}
+
 .btn {
   margin: 10px;
   padding: 5px;
