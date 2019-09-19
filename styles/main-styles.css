@@ -135,7 +135,7 @@ header h1 {
   grid-template-rows: min-content 1fr min-content;
   grid-gap: 5px;
   width: 300px;
-  height: 200px;
+  height: 220px;
   margin: 10px;
   padding: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -159,24 +159,6 @@ header h1 {
 
 .message-overflow {
   overflow: auto;
-}
-
-/* common components */
-.btn {
-  margin: 10px;
-  padding: 5px;
-  outline: none;
-  border: 0.8px solid #000;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-  background-color: var(--highlight-color);
-  font-size: 1.1em;
-  color: var(--white-color);
-  text-transform: uppercase;
-}
-
-.btn:active {
-  transform: scale(0.95);
 }
 
 /* services section */
@@ -378,3 +360,20 @@ header h1 {
 
 }
 
+/* common components */
+.btn {
+  margin: 10px;
+  padding: 5px;
+  outline: none;
+  border: 0.8px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+  background-color: var(--highlight-color);
+  font-size: 1.1em;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
