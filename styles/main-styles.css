@@ -417,12 +417,6 @@ form textarea {
   margin: 30px auto;
 }
 
-.services-title {
-  font-size: 2em;
-  text-shadow: 1px 1px var(--text-color);
-  color: var(--highlight-color);
-}
-
 @media screen and (max-width: 768px) {
   .services-container {
     grid-template-columns: 1fr;
