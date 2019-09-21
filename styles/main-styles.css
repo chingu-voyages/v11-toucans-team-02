@@ -100,6 +100,26 @@ header h1 {
   margin-left: 25px;
 }
 
+.tooltiplogo {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiplogo .tooltiptextlogo {
+  visibility: hidden;
+  background-color: var(--highlight-color);
+  width: 300px;
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.tooltiplogo:hover .tooltiptextlogo {
+  visibility: visible;
+}
+
 /* review section */
 #review-section {
   display: grid;
