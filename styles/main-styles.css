@@ -108,7 +108,6 @@ header h1 {
 .tooltiplogo .tooltiptextlogo {
   visibility: hidden;
   background-color: var(--highlight-color);
-  width: 300px;
   color: var(--white-color);
   text-align: center;
   border-radius: 10px;
