@@ -178,10 +178,11 @@ header h1 {
 }
 
 .info-form-container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: min-content 1fr 2fr;
   align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 10px;
   border-radius: 5px;
   background-color: var(--gray-bg-color);
 }
@@ -196,14 +197,17 @@ header h1 {
 }
 
 .contact-form-container {
-  padding: 10px 100px;
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 5px;
   border-radius: 50px;
   background-color: var(--white-color);
 }
 
 .form {
   display: grid;
-  max-width: 400px;
+  max-width: 600px;
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: repeat(4, min-content);
   grid-template-areas:
@@ -224,6 +228,7 @@ header h1 {
 
 .form-comment {
   grid-area: message;
+  resize: none;
 }
 
 .submit-btn {
@@ -244,7 +249,17 @@ form textarea {
   border-radius: 5px;
   padding: 5px;
 }
-
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding: 10px;
+}
+.social-icon {
+  height: 36px;
+  width: 36px;
+}
 /* services section */
 .services-container {
   display: grid;
@@ -431,45 +446,43 @@ form textarea {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0;  
+  opacity: 0;
   transition: opacity 1s;
   -webkit-transition: opacity 1s;
-	-moz-transition: opacity 1s;
+  -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
   border-radius: 10px;
-
 }
 
 .showing {
   opacity: 1;
-
 }
 
-.slide:nth-of-type(1){
+.slide:nth-of-type(1) {
   background: url("../images/nathan-dumlao-vbt-Fp3b5FA-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.slide:nth-of-type(2){
+.slide:nth-of-type(2) {
   background: url("../images/juan-gomez-oKk6gBBgZ4c-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.slide:nth-of-type(3){
+.slide:nth-of-type(3) {
   background: url("../images/alva-pratt-a5ToDH34m0I-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.slide:nth-of-type(4){
+.slide:nth-of-type(4) {
   background: url("../images/noahs-knight-5aCcwPXe5l0-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.slide:nth-of-type(5){
+.slide:nth-of-type(5) {
   background: url("../images/spencer-davis-jZ2lhAhy2ZI-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -483,21 +496,37 @@ form textarea {
 
 .slide h2 {
   margin-top: 135px;
-  font-size: 40px;  
+  font-size: 40px;
 }
 
 .section-title {
   text-align: center;
 }
 
+/* mid to small screen size contact changes */
+@media screen and (max-width: 840px) {
+  .info-form-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .social-container {
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .contact-form-container {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .services-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-  }
-
-  .contact-form-container {
-    padding: 10px 20px;
   }
 
   .cell-1,
@@ -547,7 +576,7 @@ form textarea {
 
 @media screen and (max-width: 425px) {
   .form {
-    grid-template-columns:  min-content;
+    grid-template-columns: min-content;
     grid-template-rows: repeat(5, min-content);
     grid-template-areas:
       "header"
@@ -556,10 +585,6 @@ form textarea {
       "message"
       "submit";
     grid-gap: 10px;
-  }
-
-  .contact-form-container {
-    padding: 10px 50px;
   }
 }
 
