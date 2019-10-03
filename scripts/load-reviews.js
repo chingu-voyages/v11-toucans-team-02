@@ -92,9 +92,7 @@ function createReview(review) {
   dateSpan.className = "review-date";
   dateSpan.textContent = review.date;
 
-  headerDiv.appendChild(nameH3);
-  headerDiv.appendChild(dateSpan);
-  reviewDiv.appendChild(headerDiv);
+  headerDiv.append(nameH3, dateSpan);
 
   const messageP = document.createElement("p");
   messageP.id = `msg${review.idCode}`;
@@ -106,8 +104,7 @@ function createReview(review) {
   button.textContent = "more";
   button.addEventListener("click", toggleMoreLess);
 
-  reviewDiv.appendChild(messageP);
-  reviewDiv.appendChild(button);
+  reviewDiv.append(headerDiv, messageP, button);
   return reviewDiv;
 }
 
