@@ -86,11 +86,11 @@ const reviews = [
 ];
 
 function loadReviews() {
-  fragment = document.createDocumentFragment();
   const reviews = getReviews();
-  for (let i = 0; i < reviews.length; i++) {
-    fragment.appendChild(createReview(reviews[i]));
-  }
+  const fragment = reviews.reduce((fragment, review) => {
+    fragment.appendChild(createReview(review));
+    return fragment;
+  }, document.createDocumentFragment());
   document.querySelector(".reviews-container").appendChild(fragment);
 }
 
