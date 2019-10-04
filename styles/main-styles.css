@@ -488,8 +488,7 @@ form textarea {
   background-size: cover;
 }
 
-.slide h2,
-.slide p {
+.slide h2 {
   text-align: center;
   color: var(--white-color);
 }
