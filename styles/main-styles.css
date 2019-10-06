@@ -60,7 +60,7 @@ header {
   margin-top: 28px;
   background-image: url("../images/creative-designers-desk.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 100vh;
   color: var(--highlight-color);
 }
