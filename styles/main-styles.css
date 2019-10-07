@@ -636,6 +636,7 @@ form textarea {
 .section-title {
   align-self: center;
   justify-self: center;
+  margin: 25px 0 ;
   font-size: 2em;
   text-shadow: 1px 1px var(--text-color);
   color: var(--highlight-color);
